@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ground OPS × Security — Beach & Bar Experience 2025 Edition 3</title>
+
+<!-- SEO & Sharing -->
+<meta name="description" content="Ground OPS × Security — Beach & Bar Experience 2025. A premium nightlife celebration at De-Rain Beach, Entebbe.">
+<meta property="og:title" content="Ground OPS × Security — Beach & Bar Experience 2025">
+<meta property="og:description" content="A night of high vibes, ocean breeze, music, cocktails, and the unbeatable OPS × Security energy.">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #0c0c0c;
+    color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+/* GLOW EFFECT */
+.glow-red {
+    text-shadow: 0 0 10px #ff0000, 0 0 18px #ff1a1a;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.55);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3b3b;
+    text-shadow: 0 0 5px #ff3b3b;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.85)),
+    url('YOUR-UGANDA-AIRLINES-BANNER.jpg') center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #fff;
+    animation: fadeDown 1.5s ease-out forwards;
+}
+
+.hero p {
+    font-size: 22px;
+    max-width: 720px;
+    margin-top: 10px;
+    animation: fadeUp 1.8s ease-out forwards;
+}
+
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* COUNTDOWN */
+.countdown {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff3b3b;
+    text-shadow: 0 0 10px #ff3b3b;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 30px;
+    padding: 14px 32px;
+    background: #d40000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.btn:hover {
+    background: #ff2b2b;
+    box-shadow: 0 0 20px #ff2b2b;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #1a1a1a;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(255,0,0,0.15);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    color: #ff3b3b;
+    font-size: 32px;
+    border-left: 6px solid #ff3b3b;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+.highlight {
+    color: #ff4747;
+    font-weight: bold;
+}
+
+/* IMAGE GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ff2b2b;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: #fff;
+    padding: 18px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 15px #25D366;
+    z-index: 999;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    margin-top: 50px;
+    color: #aaa;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo glow-red">OPS × Security</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#fees">Fees</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1 class="glow-red">Ground OPS × Security</h1>
+    <p>Beach & Bar Experience — Edition 3  
+       A night of high vibes, ocean breeze, team celebration & unforgettable moments.</p>
+
+    <div class="countdown" id="countdown"></div>
+
+    <button class="btn">20th December 2025 • Entebbe</button>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+    <h2>Event Overview</h2>
+    <div class="details">
+        <p>📍 <strong>Venue:</strong> De-Rain Beach, Kitubulu — Entebbe</p>
+        <p>🗓️ <strong>Date:</strong> Saturday, 20th December 2025</p>
+        <p>🌙 <strong>After-Party:</strong> O’Ganda Irish Bar, Entebbe — till late!</p>
+        <p>✨ <strong>Theme:</strong> Close the year in style — beach winds, good music & elite OPS × Security vibes.</p>
+    </div>
+</div>
+
+<!-- FEES -->
+<div class="section" id="fees">
+    <h2>Fees & Access</h2>
+    <div class="details">
+        <p>🎟️ Early Bird: <span class="highlight">40,000 UGX</span></p>
+        <p>🎫 Standard Entry: <span class="highlight">50,000 UGX</span></p>
+        <p>👗 Dress Code: <span class="highlight">Smart to Kill</span></p>
+        <p>🔥 Expect: Cocktails • Beach Games • Music • Photo Spots • Surprise Acts</p>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section" id="gallery">
+    <h2>Gallery & Vibes</h2>
+    <div class="grid">
+        <img src="https://uploads.onecompiler.io/446gpzggk/446gpn7k9/Party2.webp">
+        <img src="https://uploads.onecompiler.io/446gpzggk/446gpn7k9/party%20three.jpg">
+        <img src="https://uploads.onecompiler.io/446gpzggk/446gpn7k9/Cake.jpg">
+        <img src="https://uploads.onecompiler.io/446gpzggk/446gpn7k9/Oganda.jfif">
+        <img src="https://uploads.onecompiler.io/446gpzggk/446gpn7k9/de%20rain.jpg">
+        <img src="https://uploads.onecompiler.io/446gpzggk/446gpn7k9/Uganda%20Airlines2%20logo.png">
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>RSVP & Contacts</h2>
+    <div class="details">
+        <p>📞 Calvin: <span class="highlight">0708 219 539</span></p>
+        <p>📞 Katp SP: <span class="highlight">0700 388 899</span></p>
+        <p>📞 Daniel: <span class="highlight">0704 544 461</span></p>
+    </div>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/256708219539" class="whatsapp">💬</a>
+
+<footer>
+    © 2025 Ground OPS × Security — Beach & Bar Experience (Edition 3). All Rights Reserved.
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+// COUNTDOWN
+const eventDate = new Date("December 20, 2025 18:00:00").getTime();
+setInterval(() => {
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+
+    if (diff <= 0) {
+        document.getElementById("countdown").innerHTML = "The Event Is Live Tonight!";
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}, 1000);
+
+// SCROLL ANIMATIONS
+const sections = document.querySelectorAll('.section');
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            sec.classList.add('visible');
+        }
+    });
+});
+</script>
+</body>
+</html>
