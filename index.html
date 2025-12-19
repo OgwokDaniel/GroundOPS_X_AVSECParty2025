@@ -291,7 +291,37 @@ footer {
 <!-- JAVASCRIPT -->
 <script>
 // COUNTDOWN
-const eventDate = new Date("December 20, 2025 18:00:00").getTime();
+<script>
+// COUNTDOWN TO TOMORROW AT 15:00
+const now = new Date();
+
+// Set event date to tomorrow
+const eventDate = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + 1,
+    15, 0, 0, 0 // 15:00 hours
+).getTime();
+
+setInterval(() => {
+    const currentTime = new Date().getTime();
+    const diff = eventDate - currentTime;
+
+    if (diff <= 0) {
+        document.getElementById("countdown").innerHTML = "🔥 The Party Is Live Now!";
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown").innerHTML =
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}, 1000);
+</script>
+
 setInterval(() => {
     const now = new Date().getTime();
     const diff = eventDate - now;
@@ -323,5 +353,6 @@ window.addEventListener('scroll', () => {
 </script>
 </body>
 </html>
+
 
 
