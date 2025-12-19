@@ -290,17 +290,16 @@ footer {
 
 <!-- JAVASCRIPT -->
 <script>
-// COUNTDOWN
-<script>
-// COUNTDOWN TO TOMORROW AT 15:00
+
+    // COUNTDOWN TO TOMORROW AT 15:00 (3:00 PM)
 const now = new Date();
 
-// Set event date to tomorrow
+// set event time to tomorrow at 15:00
 const eventDate = new Date(
     now.getFullYear(),
     now.getMonth(),
     now.getDate() + 1,
-    15, 0, 0, 0 // 15:00 hours
+    15, 0, 0
 ).getTime();
 
 setInterval(() => {
@@ -320,25 +319,7 @@ setInterval(() => {
     document.getElementById("countdown").innerHTML =
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }, 1000);
-</script>
 
-setInterval(() => {
-    const now = new Date().getTime();
-    const diff = eventDate - now;
-
-    if (diff <= 0) {
-        document.getElementById("countdown").innerHTML = "The Event Is Live Tonight!";
-        return;
-    }
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-    document.getElementById("countdown").innerHTML =
-        `${days}d ${hours}h ${minutes}m ${seconds}s`;
-}, 1000);
 
 // SCROLL ANIMATIONS
 const sections = document.querySelectorAll('.section');
@@ -353,6 +334,7 @@ window.addEventListener('scroll', () => {
 </script>
 </body>
 </html>
+
 
 
 
